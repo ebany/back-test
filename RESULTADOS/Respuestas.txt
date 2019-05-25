@@ -1,0 +1,24 @@
+
+
+2.  	- JavaBeans
+	- Java API for RESTful Web Services
+	- Java Persistence API
+
+3.	- Grizzly
+
+4.	- payara-embedded
+
+5.	- Una aplicacion desarrollada con las tecnologías Java EE permite ser desplegada
+	  en cualquier servidor de aplicaciones o servidor web que cumpla con el estándar.
+	  Algunos:
+		-GlassFish
+		-Jetty
+		-Oracle WebLogic
+
+
+6.	-Si se podra ejecutar el proyecto.
+		-Al utilizar Java Persistence, los datos persisten por un tiempo limitado,
+		 pero al no tener una base de datos configurada, los datos no seran 
+		 almacenados en ninguna parte.
+		-Con arquillian no es neceario desplegar el servidor, podemos realizar
+		 pruebas y obtener resultados.

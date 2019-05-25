@@ -29,6 +29,15 @@ public class MovieController {
     public Movie findById(@PathParam("id") Long id){
         return movieRepository.findById(id);
     }
+    
+    @POST
+    @Path("/add/{titulo}/{anio}/{duracion}")
+    public String create2(@PathParam("titulo") String titulo,@PathParam("anio") String anio,
+                @PathParam("duracion") String duracion){
+        Movie movie = new Movie(titulo, anio, duracion);
+        create(movie);
+        return "id:" + movie.getMovieId() + " titulo:" + movie.getTitle();
+    }
 
     @PUT
     public Response create(Movie movie){
