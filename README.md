@@ -24,18 +24,35 @@ fun hello() = "world"
 
 2. Please enumerate al least 3 Java EE APIs being used at this project, also define it's main objective
 
+```JavaBeans
+Java API for RESTful Web Services
+Java Persistence API
+```
 3. Which of the following is not an application server?
 
 * Tomcat
 * Undertow
-* Grizzly
+> Grizzly
 * Netty
 
 4. This project defines two main profiles. Which one will be the default if -P argument is not used on Maven?
 
+> payara-embedded
+
 5. Could you guess if this project will be supported on many application servers? Which ones? Why is this possible?
 
+```
+Una aplicacion desarrollada con las tecnologías Java EE permite ser desplegad en cualquier servidor de aplicaciones o servidor web que cumpla con el estándar.
+Algunos: GlassFish,Jetty,Oracle WebLogic, ...
+```
+
 6. If no database is configured? Will you be able to run this project? Why?
+
+```
+Si se podra ejecutar el proyecto.
+-Al utilizar Java Persistence, los datos persisten por un tiempo limitado,pero al no tener una base de datos configurada, los datos no seran almacenados en ninguna parte.
+-Con arquillian no es neceario desplegar el servidor, podemos realizar pruebas y obtener resultados.
+```
 
 ## Development tasks
 
